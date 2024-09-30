@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#top{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 20px 90px;
+    color: white;
+}
+#top ul{
+    display: flex;
+}
+#top ul li{
+    list-style-type: none;
+    margin: 0px 10px;
+}
+#navigator{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 90px;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    text-align: center;
+    width: 95%;
+    margin: auto;
+
+}
+#navigator li{
+    list-style-type: none;
+
+}
+#content{
+    display: flex;
+}
+#content li{
+    margin: 0px 10px;
+
+}
+#background-image{
+    background:linear-gradient(rgba(0, 0, 0, 0.7),rgb(0,0,0,0.7)),url('student.png') ;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#logo i{
+    font-size: 35px;
+    color: orange;
+}
+#logo span{
+    font-size: 30px;
+    padding: 0px 0px 0px 10px;
+    color: white;
+}
+#content{
+    color: white;
+}
+#caption{
+    padding: 100px 120px 20px;
+
+}
+#caption>h1{
+    color: white;
+    font-size: 80px;
+}
+#caption>p{
+    padding-top: 20px;
+    color: grey;
+    font-size: 20px;
+}
+#caption>button{
+    margin-top: 20px;
+    padding: 15px 20px;
+    background-color: orange;
+    outline: 1px solid transparent;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+}
+#tag{
+    display: flex;
+    padding: 90px 100px 50px;
+}
+#tag>div{
+    border: 1px solid transparent;
+    background-color: rgba(245, 245, 245, 0.31);
+    text-align: center;
+    margin: 0px 20px;
+}
+#tag h3{
+    color: white;
+    padding: 30px 0px;
+
+}
+#tag p{
+    color: grey;
+}
+#tag h4{
+    padding: 30px 0px;
+}
+#last{
+    text-align: center;
+    padding: 30px 0px;
+}
+#last>h1{
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+#dropdown{
+    display: none;
+}
+
+/* css responsiveness */
+@media(max-width:1440px){
+    #caption>h1{
+        color: white;
+        font-size: 72px;
+    }
+    #caption{
+        padding: 120px 120px 20px;
+    
+    }
+}
+@media(max-width:1432px){
+    #caption>h1{
+        color: white;
+        font-size: 70px;
+    }
+}
+@media(max-width:1400px){
+    #caption>h1{
+        color: white;
+        font-size: 65px;
+    }
+    #caption{
+        padding: 135px 120px 20px;
+    
+    }
+}
+@media(max-width:1362px){
+    #caption>h1{
+        color: white;
+        font-size: 65px;
+    }
+    #caption{
+        padding: 120px 120px 20px;
+    
+    }
+}
+@media(max-width:1317px){
+    #caption>h1{
+        color: white;
+        font-size: 55px;
+    }
+    #caption{
+        padding: 130px 120px 20px;
+    
+    }
+}
+@media(max-width:1152px){
+    #caption>h1{
+        color: white;
+        font-size: 50px;
+    }
+    #caption{
+        padding: 140px 120px 20px;
+    
+    }
+}
+@media(max-width:10px){
+    #content{
+        display: none;
+    }
+    #dropdown{
+        display: block;
+        color: white;
+    }
+    .dropdown{
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content{
+        position: absolute;
+        display: none;
+    }
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+}
+@media(max-width:1317px){
+    #caption>h1{
+        color: white;
+        font-size: 45px;
+    }
+    #caption{
+        padding: 150px 120px 20px;
+    }
+}
+@media(max-width:985px){
+    #caption>h1{
+        color: white;
+        font-size: 40px;
+    }
+    #caption{
+        padding: 160px 120px 20px;
+    }
+    #tag{
+        display: flex;
+        padding: 90px 100px 50px;
+        flex-wrap: wrap;
+        margin: 80px 0px 50px auto;
+        justify-content: center;
+
+    }
+    #tag h3{
+        /* color: black; */
+    }
+    #tag div{
+        background-color: black;
+        margin: 20px 0px;
+    }
+    #tag h4{
+        color: white;
+    }
+}
+    
+@media(max-width:748px){
+    #caption{
+        padding: 80px 120px 20px;
+    }
+}
+@media(max-width:620px){
+    header{
+        display: none;
+    }
+}
+@media(max-width:510px){
+    #caption>h1{
+        color: white;
+        font-size: 30px;
+    }
+    #navigator{
+        padding: 20px 40px;
+    }
+    #caption{
+        padding: 80px 40px 20px;
+    }
+    #background-image{
+        height: 500px;
+    }
+}
